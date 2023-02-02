@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub-profile-card</title>
+
+    <!-- fontAwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Git hub<i class="fa-brands fa-github"></i></h1>
+    <main>
+      <!-- input section -->
+      <div class="input-container">
+        <input type="text" id="input" placeholder="Enter your id" />
+        <button id="btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!-- loading section -->
+      <div class="loader" id="loader"></div>
+      <!-- output card -->
+      <div class="result-card" id="result">
+        <div class="image-container" id="profile">
+          <img src="" alt="" class="image" />
+        </div>
+        <p id="profile-name"><i class="fa-brands fa-github"></i></p>
+        <div class="follow">
+          <div class="followers">
+            <h3>followers</h3>
+            <span id="followers">1m</span>
+          </div>
+          <div class="followers">
+            <h3>following</h3>
+            <span id="following">10</span>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <h3>repositories</h3>
+            <span id="repositories">2548966</span>
+          </div>
+          <div class="project">
+            <h3>public gits</h3>
+            <span id="public">597635</span>
+          </div>
+        </div>
+        <h3 class="location" id="location">
+          <i class="fa-solid fa-location-dot"></i>location
+        </h3>
+        <h3 class="visit">
+          <i class="fa-solid fa-up-right-from-square"></i
+          ><a href="https://github.com/mojombo" id="link"> visit profile</a>
+        </h3>
+      </div>
+    </main>
+    <!-- social icons -->
+
+    <div class="social-icon">
+      <a href="https://instagram.com/mohan__tox?igshid=ZmZhODViOGI="
+        ><i class="fa-brands fa-instagram icons"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/mohanbharathi-g-048664222"
+        ><i class="fa-brands fa-linkedin icons"></i
+      ></a>
+      <a href="https://github.com/Mohanbharathi-g"
+        ><i class="fa-brands fa-github icons"></i
+      ></a>
+    </div>
+    <!-- <p>created by mohanbharathi</p> -->
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
